@@ -20,32 +20,3 @@ mention: A word in a tweet that begins with the mention symbol. Twitter uses the
 
 Note that a mention is not a valid tweet word, because it has the mention symbol as its first character. Here are some more interesting examples of how we will treat valid tweet words, hashtags, and mentions in this
 assignment.
-
-Function name: (Parameter types) -> Return type Full Description (paraphrase to get a proper docstring description)
-Return type
-    is_valid_tweet: (str) -> bool
-add_hashtag: (str, str) -> str
-is_mentioned: (str, str) -> bool
-num_tweets_required: (str) -> int
-Using Constants
-The parameter represents a potential tweet. The function should return True if and only if the tweet contains between 1 and MAX_TWEET_LENGTH characters, inclusive.
-The first parameter represents a valid tweet. The second parameter represents a valid tweet word.
-Appending a space, a hash symbol, and the tweet word to the end of the original tweet will result in a potential tweet. If the potential tweet is a valid tweet, the function should return the potential tweet. If the potential tweet is not a valid tweet, the function should return the original tweet.
-For example (assuming the hash symbol is '#'), if the first argument is 'I like' and the second argument is 'cscA08', then the function should return 'I like #cscA08', if MAX_TWEET_LENGTH is at least 14. Otherwise, it should return 'I like'.
-The first parameter represents a valid tweet, and the second parameter represents a valid tweet word. This function should return True if and only if the tweet contains a mention made up of the mention symbol and the tweet word. For example (assuming the mention symbol is '@'), if the first argument is 'Go @Raptors!', and the second argument is 'Raptors', then the function should return True.
-Hint: This function is very similar to the function contains_hashtag. What can you do to avoid writing the same code twice?
-The parameter represents a message. This function should return the minimum number of tweets that would be required to communicate the entire message. Recall the maximum length of a tweet is MAX_TWEET_LENGTH.
-Hint: The ceil function in the math module is useful here.
-Functions to write for A1
-     compare_tweet_lengths: (str, str) -> int
-The two parameters represent valid tweets. This function must return one of three integers: 1 (if the first tweet is longer than the second), -1 (if the second tweet is longer than the first), or 0 (if the tweets have the same length).
-         contains_hashtag: (str, str) -> bool
-The first parameter represents a valid tweet, and the second parameter represents a valid tweet word. This function should return True if and only if the tweet contains a hashtag made up of the hash symbol and the tweet word. For example (assuming the hash symbol is '#'), if the first argument is 'I like #cscA08', and the second argument is 'cscA08', then the function should return True.
-Notes: If the first argument is 'I like #cscA08', and the second argument is 'csc', then the function should return False. Also, if the first argument is 'I like #cscA08, #mat137, and #phl101', and the second argument is cscA08, the function should return True.
-Hint: Use the helper function clean that is provided in the starter code.
-    
-add_mention_exclusive: (str, str) -> str
-The first parameter represents a valid tweet and the second parameter represents a valid tweet word. Appending a space, a mention symbol, and the tweet word to the end of the original tweet will result in a potential tweet. If the potential tweet is valid and the original tweet contains the given tweet word, the function should return the potential tweet. In all other cases, the function should return the original tweet. Note that if the tweet word is mentioned in the original tweet (i.e., it appears with a MENTION_SYMBOL as a first character), then the function should return the original tweet.
-For example (assuming the mention symbol is '@'), if the first argument is 'Go Raptors!' and the second argument is 'Raptors', then the function should return 'Go Raptors! @Raptors'. If, on the other hand, the first argument is 'Go @Raptors!' and the second argument is 'Raptors', then the function should return the original tweet 'Go @Raptors!'.
-Hint: Can you use one of your other functions as a helper function?
-     
