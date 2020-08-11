@@ -6,12 +6,14 @@ This assignment is based on the social network company Twitter. Twitter allows u
 
 Here are some example tweets:
 Standing ovation as Setsuko Thurlow​ is awarded a Doctor of Laws degree, honoris causa, by the University of Toronto @UofT for her tireless nuclear disarmament work and contributions to the Treaty on the Prohibition of Nuclear Weapons with @nuclearban ICAN
-     Congratulations to our class of 2019 #UofTGrad19
+
+Congratulations to our class of 2019 #UofTGrad19
+
 #UofT's @ProbabilityProf @UofTStatSci created a mathematical model at the start of the playoffs to figure out the team's odds of winning. He predicts their home-court advantage will give them an edge. http://bit.ly/ProbProf
+
 Some terminology
 We will use the following terms in this assignment.
-tweet: A message posted on Twitter. For our assignment, a valid tweet is between 1 and MAX_TWEET_LENGTH
-characters long (inclusive). MAX_TWEET_LENGTH is a constant.
+tweet: A message posted on Twitter. For our assignment, a valid tweet is between 1 and MAX_TWEET_LENGTH characters long (inclusive). MAX_TWEET_LENGTH is a constant.
 tweet word: A word in a tweet. For our assignment, a valid tweet word contains only alphanumeric characters and underscores. For example, pink_elephant is a valid tweet word, while bits&pieces is not (In fact, bits&pieces has two valid tweet words, bits and pieces, with an ampersand (&) between them.)
 hashtag: A word in a tweet that begins with the hash symbol. Twitter uses the number sign (#) as the hash symbol. For our assignment, we'll use the constant HASHTAG_SYMBOL to represent the hash symbol. Hashtags are used to label important words or terms in a tweet. A valid hashtag has the hash symbol as its first character and the rest of the characters form a valid tweet word. In other words, a hashtag begins with the hash symbol, and contains all alphanumeric characters and underscores up to (but not including) the first non-alphanumeric character (such as space, punctuation, etc.) or the end of the tweet. A hashtag either begins a tweet or is preceded by a character that is not alphanumeric and is not an underscore. A hashtag must contain at least one alphanumeric character.
 #UofT, #cscA08, and #Go_Raptors are three examples of hashtags on Twitter.
@@ -42,7 +44,7 @@ What to do
 In the starter code file tweet.py, complete the following function definitions. Use the Function Design Recipe that you have been learning in this course . We have included the type contracts in the following table; please read through the table to understand how the functions will be used.
 We will be evaluating your docstrings in addition to your code. Please include two examples in your docstrings. You will need to paraphrase the full descriptions of the functions to get an appropriate docstring description.
 CSCA08H Assignment 1
-                   Function name:
+Function name:
 (Parameter types) -> Full Description (paraphrase to get a proper docstring description)
 Return type
     is_valid_tweet: (str) -> bool
