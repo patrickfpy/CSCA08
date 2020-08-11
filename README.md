@@ -5,7 +5,7 @@ Tweet Analyser
 This assignment is based on the social network company Twitter. Twitter allows users to read and post tweets that are between 1 and 280 characters long, inclusive. In this assignment, you will be writing functions that (we imagine) are part of the programs that manage Twitter feeds.
 
 Here are some example tweets:
-Standing ovation as Setsuko Thurlow​ is awarded a Doctor of Laws degree, honoris causa, by the University of Toronto @UofT for her tireless nuclear disarmament work and contributions to the Treaty on the Prohibition of Nuclear Weapons with @nuclearban ICAN
+Standing ovation as Setsuko Thurlow is awarded a Doctor of Laws degree, honoris causa, by the University of Toronto @UofT for her tireless nuclear disarmament work and contributions to the Treaty on the Prohibition of Nuclear Weapons with @nuclearban ICAN
 
 Congratulations to our class of 2019 #UofTGrad19
 
