@@ -4,12 +4,6 @@ Tweet Analyser
 
 This assignment is based on the social network company Twitter. Twitter allows users to read and post tweets that are between 1 and 280 characters long, inclusive. In this assignment, you will be writing functions that (we imagine) are part of the programs that manage Twitter feeds.
 
-Here are some example tweets:
-Standing ovation as Setsuko Thurlow is awarded a Doctor of Laws degree, honoris causa, by the University of Toronto @UofT for her tireless nuclear disarmament work and contributions to the Treaty on the Prohibition of Nuclear Weapons with @nuclearban ICAN
-
-Congratulations to our class of 2019 #UofTGrad19
-
-#UofT's @ProbabilityProf @UofTStatSci created a mathematical model at the start of the playoffs to figure out the team's odds of winning. He predicts their home-court advantage will give them an edge. http://bit.ly/ProbProf
 
 Some terminology
 We will use the following terms in this assignment.
@@ -32,13 +26,9 @@ Some more obscure yet valid examples:
 In something#something_else we consider something is a valid tweet word and #something_else is a hashtag.
 In no@spaces#whatsoever?! we consider no is a tweet word, @spaces is a mention, and #whatsoever is a hashtag.
 For a complete list of Twitter terms, check out the Twitter glossary. Starter code
-For this assignment, we are giving you some files, including a Python starter code files. Please download the Assignment 1 Files and extract the zip archive.
-Starter code: tweet.py
-This file contains some constants, the header and the complete docstring (but not body) for the first function you
-are to write. Your job is to complete this file. Checker: a1_checker.py
-We have provided a checker program that you should use to check your code. See below for more information about a1_checker.py.
-Constants
-Constants are special variables whose values do not change once assigned. A different naming convention (uppercase pothole) is used for constants, so that programmers know to not change their values. For example, in the starter code, the constant MAX_TWEET_LENGTH is assigned the value 50 at the beginning of the module and the value of MAX_TWEET_LENGTH should never change in your code. When writing your code, if you need to use the value of the maximum tweet length, you should use MAX_TWEET_LENGTH. The same goes for the other constant values.
+
+
+
 Using constants simplifies code modifications and improves readability. If we later decide to use a different tweet length, we would only have to change the length in one place (the MAX_TWEET_LENGTH assignment statement), rather than throughout the program.
 What to do
 In the starter code file tweet.py, complete the following function definitions. Use the Function Design Recipe that you have been learning in this course . We have included the type contracts in the following table; please read through the table to understand how the functions will be used.
