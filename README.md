@@ -7,26 +7,21 @@ This assignment is based on the social network company Twitter. Twitter allows u
 Some terminology
 
 We will use the following terms in this assignment.
+
 tweet: A message posted on Twitter. For our assignment, a valid tweet is between 1 and MAX_TWEET_LENGTH characters long (inclusive). MAX_TWEET_LENGTH is a constant.
 
 tweet word: A word in a tweet. For our assignment, a valid tweet word contains only alphanumeric characters and underscores. For example, pink_elephant is a valid tweet word, while bits&pieces is not (In fact, bits&pieces has two valid tweet words, bits and pieces, with an ampersand (&) between them.)
 
 hashtag: A word in a tweet that begins with the hash symbol. Twitter uses the number sign (#) as the hash symbol. For our assignment, we'll use the constant HASHTAG_SYMBOL to represent the hash symbol. Hashtags are used to label important words or terms in a tweet. A valid hashtag has the hash symbol as its first character and the rest of the characters form a valid tweet word. In other words, a hashtag begins with the hash symbol, and contains all alphanumeric characters and underscores up to (but not including) the first non-alphanumeric character (such as space, punctuation, etc.) or the end of the tweet. A hashtag either begins a tweet or is preceded by a character that is not alphanumeric and is not an underscore. A hashtag must contain at least one alphanumeric character.
-#UofT, #cscA08, and #Go_Raptors are three examples of hashtags on Twitter.
+
 Note that a hashtag is not a valid tweet word, because it has the hash symbol as its first character.
 
 mention: A word in a tweet that begins with the mention symbol. Twitter uses the at-sign (@) as the mention symbol. For our assignment, we'll use the constant MENTION_SYMBOL to represent the mention symbol. Mentions are used to direct a message at or about a particular Twitter user, so the word should be a Twitter username (but for the purposes of this assignment, we will not check if the word that follows the MENTION_SYMBOL is a real username — we'll just assume it). For our purposes, the definition of a mention is very similar to that of a hashtag. A valid mention has the mention symbol as its first character and the rest of the characters form a valid tweet word. In other words, a mention begins with the at-sign, and contains all alphanumeric characters and underscores up to (but not including) the first non-alphanumeric character (such as space, punctuation, etc.) or the end of the tweet. A mention either begins a tweet or is preceded by a character that is not alphanumeric and is not an underscore. A mention must contain at least one alphanumeric character.
-@redcrosscanada, @UN_Women, and @UofTGrad2019 are three examples of Twitter mentions.
+
 Note that a mention is not a valid tweet word, because it has the mention symbol as its first character. Here are some more interesting examples of how we will treat valid tweet words, hashtags, and mentions in this
 assignment.
 
-In the tweet
-     Raptors win championship,#NBAFINALS, Go @Raptors!!!     #WeTheNorth
-we have four valid tweet words (Raptors, win, championship, and Go), two hashtags (#NBAFINALS and #WeTheNorth), and one mention (@Raptors). It is important to note that in this example there is no space between the first comma and the hashtag #NBAFINALS, there is a comma immediately following the hashtag #NBAFINALS, there are three exclamation marks immediately following the mention @Raptors, and there are more than one space after the exclamation marks. All these are valid in a tweet. Also note that the first occurrence of the word Raptors is not considered to be a mention, because it does not have the mention symbol.
-
-
-Function name:
-(Parameter types) -> Full Description (paraphrase to get a proper docstring description)
+Function name: (Parameter types) -> Return type Full Description (paraphrase to get a proper docstring description)
 Return type
     is_valid_tweet: (str) -> bool
 add_hashtag: (str, str) -> str
