@@ -1,6 +1,4 @@
-# CSCA08A1
-
-**Tweet Analyser**
+# CSCA08A1 **Tweet Analyser**
 
 This assignment is based on the social network company Twitter. Twitter allows users to read and post tweets that are between 1 and 280 characters long, inclusive. In this assignment, you will be writing functions that (we imagine) are part of the programs that manage Twitter feeds.
 
