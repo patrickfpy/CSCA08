@@ -4,8 +4,8 @@ Tweet Analyser
 
 This assignment is based on the social network company Twitter. Twitter allows users to read and post tweets that are between 1 and 280 characters long, inclusive. In this assignment, you will be writing functions that (we imagine) are part of the programs that manage Twitter feeds.
 
-
 Some terminology
+
 We will use the following terms in this assignment.
 tweet: A message posted on Twitter. For our assignment, a valid tweet is between 1 and MAX_TWEET_LENGTH characters long (inclusive). MAX_TWEET_LENGTH is a constant.
 tweet word: A word in a tweet. For our assignment, a valid tweet word contains only alphanumeric characters and underscores. For example, pink_elephant is a valid tweet word, while bits&pieces is not (In fact, bits&pieces has two valid tweet words, bits and pieces, with an ampersand (&) between them.)
@@ -16,24 +16,12 @@ mention: A word in a tweet that begins with the mention symbol. Twitter uses the
 @redcrosscanada, @UN_Women, and @UofTGrad2019 are three examples of Twitter mentions.
 Note that a mention is not a valid tweet word, because it has the mention symbol as its first character. Here are some more interesting examples of how we will treat valid tweet words, hashtags, and mentions in this
 assignment.
+
 In the tweet
      Raptors win championship,#NBAFINALS, Go @Raptors!!!     #WeTheNorth
 we have four valid tweet words (Raptors, win, championship, and Go), two hashtags (#NBAFINALS and #WeTheNorth), and one mention (@Raptors). It is important to note that in this example there is no space between the first comma and the hashtag #NBAFINALS, there is a comma immediately following the hashtag #NBAFINALS, there are three exclamation marks immediately following the mention @Raptors, and there are more than one space after the exclamation marks. All these are valid in a tweet. Also note that the first occurrence of the word Raptors is not considered to be a mention, because it does not have the mention symbol.
-In the tweet
-     @UofT welcomes its 2019 graduates! #UofTGrad2019#graduation!
-we have four valid tweet words (welcomes, its, 2019, and graduates), two hashtags (#UofTGrad2019 and #graduation), and one mention (@UofT). It is important to note that in this example there is no space between hashtags #UofTGrad2019 and #graduation. This is also valid in a tweet.
-Some more obscure yet valid examples:
-In something#something_else we consider something is a valid tweet word and #something_else is a hashtag.
-In no@spaces#whatsoever?! we consider no is a tweet word, @spaces is a mention, and #whatsoever is a hashtag.
-For a complete list of Twitter terms, check out the Twitter glossary. Starter code
 
 
-
-Using constants simplifies code modifications and improves readability. If we later decide to use a different tweet length, we would only have to change the length in one place (the MAX_TWEET_LENGTH assignment statement), rather than throughout the program.
-What to do
-In the starter code file tweet.py, complete the following function definitions. Use the Function Design Recipe that you have been learning in this course . We have included the type contracts in the following table; please read through the table to understand how the functions will be used.
-We will be evaluating your docstrings in addition to your code. Please include two examples in your docstrings. You will need to paraphrase the full descriptions of the functions to get an appropriate docstring description.
-CSCA08H Assignment 1
 Function name:
 (Parameter types) -> Full Description (paraphrase to get a proper docstring description)
 Return type
